@@ -34,7 +34,7 @@ def permission(fn):
         stamp=request.headers.get('stamp','')
         now_time_stamp=time.time()
         
-        cond1=abs(time_stamp-now_time_stamp)<1
+        cond1=abs(time_stamp-now_time_stamp)<2
         
         true_stamp=md5(password+str(time_stamp))
         cond2=true_stamp==stamp
