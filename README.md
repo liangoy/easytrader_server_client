@@ -15,7 +15,7 @@
 
 在云端部署完成后，在本地通过以下代码即可进行交易：
 
-'''python
+```python
 from client import User
 
 user=User(
@@ -26,4 +26,4 @@ user=User(
 print(user.balance())
 print(user.today_trades())
 print(user.buy('510300',100,100))
-'''
+```
