@@ -7,7 +7,7 @@ def md5(t):
     t=t.encode() if type(t)==str else t
     return hashlib.md5(t).hexdigest()
 
-class User:
+class User():
     def __init__(self,password='your password',ip='127.0.0.1',port=5000):
         self.password=password
         self.ip=ip
